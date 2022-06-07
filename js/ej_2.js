@@ -1,21 +1,21 @@
-class Cuenta{
-    constructor(titular, saldo){
-        this.titular="Alex";
-        this.saldo=0;
-    }
+class Cuenta {
+  constructor(titular, saldo) {
+    this.titular = "Alex";
+    this.saldo = 0;
+  }
 
-    ingresar(monto){
-        this.saldo=this.saldo+monto;
-    }
+  ingresar(monto) {
+    this.saldo = this.saldo + monto;
+  }
 
-    extraer(monto){
-        this.saldo=this.saldo-monto;
-    }
+  extraer(monto) {
+    this.saldo = this.saldo - monto;
+  }
 
-    informar(){
-        document.write(`Titular de la cuenta: ${this.titular}`);
-        document.write(`<br>Saldo actual: ${this.saldo}<br><br>`);
-    }
+  informar() {
+    document.write(`Titular de la cuenta: ${this.titular}`);
+    document.write(`<br>Saldo actual: ${this.saldo}<br><br>`);
+  }
 }
 
 let cuenta1 = new Cuenta();

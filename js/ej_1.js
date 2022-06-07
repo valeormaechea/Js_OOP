@@ -1,18 +1,18 @@
 class Auto {
-    constructor(marca, modelo, color, encendido){
-        this.marca = marca;
-        this.modelo = modelo;
-        this.color = color;
-        this.encendido = encendido;
-    }
+  constructor(marca, modelo, color, encendido) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.color = color;
+    this.encendido = encendido;
+  }
 
-    encenderAuto(){
-        this.encendido = true;
-    }
+  encenderAuto() {
+    this.encendido = true;
+  }
 
-    apagarAuto(){
-        this.encendido = false;
-    }
+  apagarAuto() {
+    this.encendido = false;
+  }
 }
 
 let auto1 = new Auto("Volkswagen", "Up", "azul", false);
