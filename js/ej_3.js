@@ -2,8 +2,6 @@ class Rectangulo {
   constructor(alto, ancho) {
     this.alto = alto;
     this.ancho = ancho;
-    this.perimetro = 0;
-    this.area = 0;
   }
 
   calcularPerimetro() {
