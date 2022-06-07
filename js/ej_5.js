@@ -7,6 +7,7 @@ class Persona {
     this.peso = peso;
     this.altura = altura;
     this.anoNac = anoNac;
+    this.generacion = "falta emitir generación."
   }
 
   mostrarGeneracion() {

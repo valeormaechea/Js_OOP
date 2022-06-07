@@ -3,7 +3,7 @@ class Auto {
     this.marca = marca;
     this.modelo = modelo;
     this.color = color;
-    this.encendido = encendido;
+    this.encendido = false;
   }
 
   encenderAuto() {
