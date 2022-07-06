@@ -1,7 +1,7 @@
 class Cuenta {
   constructor(titular, saldo) {
-    this.titular = "Alex";
-    this.saldo = 0;
+    this.titular = titular;
+    this.saldo = saldo;
   }
 
   ingresar(monto) {
@@ -18,7 +18,7 @@ class Cuenta {
   }
 }
 
-let cuenta1 = new Cuenta();
+let cuenta1 = new Cuenta("Alex",0);
 console.log(cuenta1);
 cuenta1.ingresar(1800);
 cuenta1.informar();
