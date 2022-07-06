@@ -1,3 +1,4 @@
+// Declaracion clase persona
 class Persona {
   constructor(nombre, edad, dni, sexo, peso, altura, anoNac) {
     this.nombre = nombre;
@@ -9,7 +10,7 @@ class Persona {
     this.anoNac = anoNac;
     this.generacion = "falta emitir generación."
   }
-
+  // Metodo para calcular y mostrar generacion
   mostrarGeneracion() {
     let caracteristica;
     if (this.anoNac < 1949) {
@@ -32,7 +33,7 @@ class Persona {
     document.write(`Pertenece a la generación "${this.generacion}", cuya
         caracteristica principal es: ${caracteristica}<BR>`);
   }
-
+  // Metodo para determinar si la persona es mayor de edad y emitir mensaje
   esMayorDeEdad() {
     if (this.edad >= 18) {
       document.write("La persona ingresada es mayor de edad.");
@@ -40,12 +41,13 @@ class Persona {
       document.write("La persona ingresada no es mayor de edad.");
     }
   }
-
+  // Metodo para generar DNI aleatorio
   generarDni() {
     let dni2 = Math.floor(Math.random() * 99999999) + 1;
     return dni2;
   }
 
+  // Metodo para mostrar datos de la persona
   mostrarDatos() {
     document.write(`<br>
     <ul>
